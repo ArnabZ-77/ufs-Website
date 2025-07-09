@@ -605,3 +605,89 @@ body::-webkit-scrollbar {
 }
 
 }
+
+/* interview results page styles */
+body {
+      margin: 0;
+      padding: 0;
+      background-color: #1e1e1e;
+      font-family: 'Montserrat', sans-serif;
+      color: #ffffff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      text-align: center;
+      position: relative;
+      overflow-x: hidden; /* hide horizontal scrollbar */
+      overflow-y: auto;   /* allow vertical scrolling */
+
+    }
+    h1 {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 2.5rem;
+      color: #00AEEF;
+      text-shadow: 0 0 10px #00AEEF;
+      margin-bottom: 1rem;
+      z-index: 1;
+    }
+
+    input, button {
+      padding: 10px 20px;
+      font-size: 1rem;
+      margin: 0.5rem;
+      border: none;
+      border-radius: 8px;
+      outline: none;
+      transition: 0.3s ease;
+      z-index: 1;
+    }
+
+    input {
+      width: 250px;
+    }
+
+    button {
+      background-color: #00AEEF;
+      color: #fff;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #007EAE;
+    }
+
+    #result {
+      margin-top: 1rem;
+      font-size: 1.2rem;
+      color: #00ffcc;
+      text-shadow: 0 0 5px #00ffcc;
+      z-index: 1;
+    }
+
+    .footer {
+      margin-top: 2rem;
+      font-size: 0.95rem;
+      z-index: 1;
+    }
+
+    .footer a {
+      color: #00AEEF;
+      text-decoration: none;
+    }
+
+    .footer a:hover {
+      text-decoration: underline;
+    }
+
+    .contacts {
+      margin-top: 1.5rem;
+      z-index: 1;
+      font-size: 0.95rem;
+      line-height: 1.6;
+    }
+
+    .emoji {
+      font-size: 1.3rem;
+    }
