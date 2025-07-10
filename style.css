@@ -504,6 +504,7 @@ body::-webkit-scrollbar {
 
 .ufs-section ul {
   padding-left: 0;
+  text-align: left;
 }
 
 .ufs-section li {
