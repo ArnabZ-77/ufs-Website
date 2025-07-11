@@ -13,6 +13,7 @@
     <img src="images/logos/logo.jpg" alt="UFS Logo" class="ufs-logo" />
     <span class="ufs-title">ULTIMATE FRISBEE SOCIETY</span>
   </div>
+    <button class="theme-toggle" onclick="toggleTheme()">🌓</button>
   <!-- 🔽 Added hamburger toggle button -->
   <button class="nav-toggle" onclick="toggleNav()">☰</button>
 
@@ -99,6 +100,24 @@ Ultimate Frisbee is a full-fledged team sport with tactics, spirit, speed, and i
     <a href="https://www.instagram.com/ultimatefrisbee_iitk/" target="_blank">Follow us on Instagram</a> for updates!
   </p>
 </div>
+  <script>
+function toggleNav() {
+  document.getElementById("ufsNavLinks").classList.toggle("show");
+}
+
+function toggleTheme() {
+  document.body.classList.toggle('light-theme');
+  localStorage.setItem('theme', document.body.classList.contains('light-theme') ? 'light' : 'dark');
+}
+
+// Load saved theme on startup
+window.onload = () => {
+  const savedTheme = localStorage.getItem('theme');
+  if (savedTheme === 'light') {
+    document.body.classList.add('light-theme');
+  }
+};
+</script>
   <script src="script.js"></script>
 </body>
 </html>
