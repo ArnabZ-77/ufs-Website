@@ -5,6 +5,78 @@
   box-sizing: border-box;
 }
 
+:root {
+  --bg-color-dark: #1e1e1e;
+  --text-color-dark: #ffffff;
+  --bg-color-light: #ffffff;
+  --text-color-light: #000000;
+  --accent-color: #00AEEF;
+}
+
+body {
+  background-color: var(--bg-color-dark);
+  color: var(--text-color-dark);
+}
+
+body.light-theme {
+  background-color: var(--bg-color-light);
+  color: var(--text-color-light);
+}
+
+body.light-theme .ufs-navbar,
+body.light-theme .ufs-nav-links,
+body.light-theme .contact-card {
+  background-color: #f0f0f0;
+  color: var(--text-color-light);
+  box-shadow: 0 0 10px rgba(0,0,0,0.15);
+}
+
+body.light-theme .ufs-title,
+body.light-theme .events-heading,
+body.light-theme h2,
+body.light-theme h3 {
+  color: var(--accent-color);
+  text-shadow: none;
+}
+
+body.light-theme .footer a {
+  color: #007EAE;
+}
+
+body.light-theme .contact-card .desc {
+  color: #333;
+}
+
+body.light-theme .ufs-nav-links li a {
+  color: #000;
+}
+
+body.light-theme .ufs-nav-links li a:hover {
+  color: var(--accent-color);
+}
+
+body.light-theme .event-content p,
+body.light-theme .page-section p {
+  color: #444;
+}
+```
+
+2. **Add somewhere in your Navbar CSS (for the new button):**
+```css
+.theme-toggle {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  margin-right: 1rem;
+  cursor: pointer;
+  color: white;
+  transition: color 0.3s ease;
+}
+
+body.light-theme .theme-toggle {
+  color: black;
+}
+
 html {
   scroll-behavior: smooth;
 }
